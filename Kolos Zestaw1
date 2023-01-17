@@ -1,0 +1,34 @@
+//Zadanie 1
+
+
+
+//Zadanie 2
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int liczba, sumap, sumanp;
+    sumap = 0;
+    sumanp = 0;
+    cout << "Podaj ciag liczb oddzielony spacjami, bez przecinków: ";
+
+    while (cin >> liczba)
+    {
+        if (liczba % 2 == 0)
+        {
+            sumap += liczba;
+        }
+        else
+        {
+            sumanp += liczba;
+        }
+        cout << "Suma parzystych: " << sumap << endl;
+        cout << "Suma nieparzystych: " << sumanp << endl;
+    }
+
+    return 0;
+}
